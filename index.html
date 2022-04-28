@@ -1,473 +1,616 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Cyrus Studio</title>
-
-<!-- Google fonts -->
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-
-<!-- font awesome -->
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-<!-- bootstrap -->
-<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-
-<!-- animate.css -->
-<link rel="stylesheet" href="assets/animate/animate.css" />
-<link rel="stylesheet" href="assets/animate/set.css" />
-
-<!-- gallery -->
-<link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
-
-<!-- favicon -->
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
-
-<link rel="stylesheet" href="assets/style.css">
-
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salem Photo Studio</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <!-- animate.css -->
+  <link rel="stylesheet" href="assets/animate/animate.css" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/responsive.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-<div class="topbar animated fadeInLeftBig"></div>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0"
+    nonce="jDBQnxyV"></script>
 
-<!-- Header Starts -->
-<div class="navbar-wrapper">
+  <!-- Header Starts -->
+  <div class="navbar-wrapper">
+    <div class="container">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="top-nav">
+        <div class="container">
+          <div class="navbar-header">
+            <!-- Logo Starts -->
+            <a class="navbar-brand" href="#home">
+              <img src="./images/Main_Logo-removebg-preview.png" alt="Salem Photo Studio" style="width: 210px;" />
+            </a>
+            <!-- #Logo Ends -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <!-- Nav Starts -->
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right scroll">
+              <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#gallery">My Work</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#pricing">Packages</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <!-- #Nav Ends -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #Header Starts -->
+
+  <!-- Slider Starts -->
+  <section id="home">
+    <div id="home-slider" class="carousel slide in" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li class="active" data-slide-to="0" data-target="#home-slider"></li>
+        <li data-slide-to="1" data-target="#home-slider" class=""></li>
+        <li data-slide-to="2" data-target="#home-slider" class=""></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active" style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url(https://images.pexels.com/photos/2229671/pexels-photo-2229671.jpeg);
+              background-size: cover;
+              background-position: center;
+              background-attachment: fixed;
+            ">
+          <div class="col-sm-offset-1 caption">
+            <h4 class="main-title wow fadeInUp">Welcome to</h4>
+            <!-- <h1
+                style="font-weight: 600; font-size: 75px;"
+                class="main-title wow fadeInUp"
+                data-wow-delay=".25s"
+              > -->
+            <img src="./images/Main_Logo-removebg-preview.png" alt="Salem Photo Studio" style="width: 450px;" />
+            <!-- </h1> -->
+            <!-- <h2 class="main-title wow fadeInUp" data-wow-delay=".35s">
+                Phrase
+              </h2> -->
+            <br />
+            <a class="btn btn-start wow fadeInUp" href="#features" data-scroll data-wow-delay=".85s">My Work</a>
+          </div>
+        </div>
+        <div class="item" style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url(https://images.pexels.com/photos/108148/pexels-photo-108148.jpeg?cs=srgb&dl=pexels-kaique-rocha-108148.jpg&fm=jpg);
+              background-size: cover;
+              background-position: center;
+              background-attachment: fixed;
+            ">
+          <div class="col-sm-offset-1 caption">
+            <h4 class="main-title wow fadeInUp" data-wow-delay=".25s">
+              Hello There!
+            </h4>
+            <h3 class="main-title wow fadeInUp" data-wow-delay=".25s">
+              I'm Salem Gonzalez
+            </h3>
+            <h2 style="font-weight: 600; font-size: 75px;" class="main-title wow fadeInUp" data-wow-delay=".35s">
+              Photographer
+            </h2>
+            <a class="btn btn-start wow fadeInUp" href="#features" data-scroll data-wow-delay=".85s">My Work</a>
+          </div>
+        </div>
+        <div class="item" style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url(images/header-bg.jpg);
+              background-size: cover;
+              background-position: center;
+              background-attachment: fixed;
+            ">
+          <div class="col-sm-offset-1 caption">
+            <h4 class="main-title wow fadeInUp" data-wow-delay=".25s">
+              Hello There!
+            </h4>
+            <h3 class="main-title wow fadeInUp" data-wow-delay=".25s">
+              I'm Salem Gonzalez
+            </h3>
+            <h2 style="font-weight: 600; font-size: 75px;" class="main-title wow fadeInUp" data-wow-delay=".35s">
+              Photographer
+            </h2>
+            <a class="btn btn-start wow fadeInUp" href="#features" data-scroll data-wow-delay=".85s">My Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Slider Ends  -->
+
+  <!-- Portfolio Starts -->
+  <section id="mainNav">
+    <div id="gallery" class="section lb">
       <div class="container">
+        <div class="section-title text-center" style="margin-top: 65px; margin-bottom: 25px;">
+          <h3>My work</h3>
+        </div>
+        <!-- end title -->
 
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="top-nav">
-          <div class="container">
-            <div class="navbar-header">
-              <!-- Logo Starts -->
-              <a class="navbar-brand" href="#home"><img src="images/logo.png" alt="logo"></a>
-              <!-- #Logo Ends -->
-
-
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
+        <div class="gallery-menu text-center row">
+          <div class="col-md-12">
+            <div class="button-group filter-button-group">
+              <button class="active" data-filter="*">All</button>
+              <button data-filter=".photo_a">Wedding</button>
+              <button data-filter=".photo_b">Quincieañera</button>
+              <button data-filter=".photo_c">Birthdays</button>
+              <button data-filter=".photo_d">Fashion</button>
+              <button data-filter=".photo_e">Food</button>
             </div>
-
-
-            <!-- Nav Starts -->
-            <div class="navbar-collapse  collapse">
-              <ul class="nav navbar-nav navbar-right scroll">
-                 <li class="active"><a href="#home">Home</a></li>
-                 <li ><a href="#about">About</a></li>
-                 <li ><a href="#works">Works</a></li>
-                 <li ><a href="#partners">Partners</a></li>
-                 <li ><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-            <!-- #Nav Ends -->
-
           </div>
         </div>
 
-      </div>
-    </div>
-<!-- #Header Starts -->
+        <div class="gallery-list row">
+          <div class="col-md-4 col-sm-6 gallery-grid photo_a">
+            <div class="gallery-single fix">
+              <img
+                src="https://images.pexels.com/photos/2253842/pexels-photo-2253842.jpeg?cs=srgb&dl=pexels-emma-bauso-2253842.jpg&fm=jpg"
+                class="img-fluid" alt="Image" style="max-width: 100%;" />
+              <div class="box-content">
+                <div class="inner-content">
+                  <h3 class="title">Wedding</h3>
+                  <span class="post">Latest Photo</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-md-4 col-sm-6 gallery-grid photo_b">
+            <div class="gallery-single fix">
+              <img
+                src="https://images.pexels.com/photos/5934446/pexels-photo-5934446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="img-fluid" alt="Image" style="max-width: 100%;" />
+              <div class="box-content">
+                <div class="inner-content">
+                  <h3 class="title">Quincieañera</h3>
+                  <span class="post">Latest Photo</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-md-4 col-sm-6 gallery-grid photo_e">
+            <div class="gallery-single fix">
+              <img
+                src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?cs=srgb&dl=pexels-ella-olsson-1640777.jpg&fm=jpg"
+                class="img-fluid" alt="Image" style="max-width: 100%;" />
+              <div class="box-content">
+                <div class="inner-content">
+                  <h3 class="title">Food</h3>
+                  <span class="post">Latest Photo</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-md-4 col-sm-6 gallery-grid photo_a">
+            <div class="gallery-single fix">
+              <img
+                src="https://images.pexels.com/photos/1026390/pexels-photo-1026390.jpeg?cs=srgb&dl=pexels-jeremy-wong-1026390.jpg&fm=jpg"
+                class="img-fluid" alt="Image" style="max-width: 100%;" />
+              <div class="box-content">
+                <div class="inner-content">
+                  <h3 class="title">Wedding</h3>
+                  <span class="post">Latest Photo</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<div id="home">
-<!-- Slider Starts -->
-<div id="myCarousel" class="carousel slide banner-slider animated bounceInDown" data-ride="carousel">     
-      <div class="carousel-inner">
-        <!-- Item 1 -->
-        <div class="item active">
-          <img src="images/back1.jpg" alt="banner">
+          <div class="col-md-4 col-sm-6 gallery-grid photo_b">
+            <div class="gallery-single fix">
+              <img
+                src="https://images.pexels.com/photos/8466251/pexels-photo-8466251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="img-fluid" alt="Image" style="max-width: 100%;" />
+              <div class="box-content">
+                <div class="inner-content">
+                  <h3 class="title">Quincieañera</h3>
+                  <span class="post">Latest Photo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 gallery-grid photo_b">
+            <div class="gallery-single fix">
+              <img
+                src="https://images.unsplash.com/photo-1640827013600-1f5411ec366b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="img-fluid" alt="Image" style="max-width: 100%;" />
+              <div class="box-content">
+                <div class="inner-content">
+                  <h3 class="title">Quincieañera</h3>
+                  <span class="post">Latest Photo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 gallery-grid photo_a">
+            <div class="gallery-single fix">
+              <img
+                src="https://images.pexels.com/photos/3361200/pexels-photo-3361200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="img-fluid" alt="Image" style="max-width: 100%;" />
+              <div class="box-content">
+                <div class="inner-content">
+                  <h3 class="title">Wedding</h3>
+                  <span class="post">Latest Photo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 gallery-grid photo_c">
+            <div class="gallery-single fix">
+              <img
+                src="https://images.pexels.com/photos/6299291/pexels-photo-6299291.jpeg?cs=srgb&dl=pexels-kampus-production-6299291.jpg&fm=jpg"
+                class="img-fluid" alt="Image" style="max-width: 100%;" />
+              <div class="box-content">
+                <div class="inner-content">
+                  <h3 class="title">Birthdays</h3>
+                  <span class="post">Latest Photo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 gallery-grid photo_c">
+            <div class="gallery-single fix">
+              <img
+                src="https://images.pexels.com/photos/7159843/pexels-photo-7159843.jpeg?cs=srgb&dl=pexels-kampus-production-7159843.jpg&fm=jpg"
+                class="img-fluid" alt="Image" style="max-width: 100%;" />
+              <div class="box-content">
+                <div class="inner-content">
+                  <h3 class="title">Birthdays</h3>
+                  <span class="post">Latest Photo</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- #Item 1 -->
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio Ends -->
 
-        <!-- Item 1 -->
-        <div class="item">
-          <img src="images/back2.jpg" alt="banner">
+  <!-- AboutMe Starts-->
+  <section id="about" class="about sections">
+    <div class="container">
+      <h1 style="text-align: center !important; margin-bottom: 45px;">
+        Discover more about me.
+      </h1>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+          <div class="about-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
         </div>
-        <!-- #Item 1 -->
-
-        <!-- Item 1 -->
-        <div class="item">
-          <img src="images/back3.jpg" alt="banner">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <div class="about-photo">
+            <img
+              src="https://images.pexels.com/photos/1540977/pexels-photo-1540977.jpeg?cs=srgb&dl=pexels-suliman-sallehi-1540977.jpg&fm=jpg"
+              alt="About Image" style="width: 250px;" />
+          </div>
         </div>
-        <!-- #Item 1 -->
+      </div>
+    </div>
+  </section>
+  <!-- AboutMe Ends -->
 
-        <!-- Item 1 -->
-        <div class="item">
-          <img src="images/back4.jpg" alt="banner">
+  <!-- Pricing Starts -->
+
+  <div id="pricing" class="section lb">
+    <div class="container">
+      <div class="section-title text-center" style="color: white; padding-bottom: 25px;">
+        <h1>Packages</h1>
+        <p>
+          Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis
+          vehicula enim, non aliquam risus.
+        </p>
+      </div>
+      <!-- end title -->
+
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="pricingTable hvr-grow">
+            <div class="pricingTable-header">
+              <h3 class="title">Studio</h3>
+            </div>
+            <div class="pricing-content">
+              <div class="price-value">
+                <i class="fa fa-star"></i>
+                <span class="amount">1000$</span>
+              </div>
+              <ul>
+                <li>1-Location Shoot</li>
+                <li>$10 Print Credit</li>
+                <li>15 Digital Files</li>
+                <li>Print Release</li>
+                <li>Print Release</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <!-- #Item 1 -->
+
+        <div class="col-md-4 col-sm-6">
+          <div class="pricingTable yellow hvr-grow">
+            <div class="pricingTable-header">
+              <h3 class="title">Fasion</h3>
+            </div>
+            <div class="pricing-content">
+              <div class="price-value">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span class="amount">2000$</span>
+              </div>
+              <ul>
+                <li>2-Location Shoot</li>
+                <li>$30 Print Credit</li>
+                <li>20 Digital Files</li>
+                <li>Print Release</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="pricingTable purple hvr-grow">
+            <div class="pricingTable-header">
+              <h3 class="title">Wedding</h3>
+            </div>
+            <div class="pricing-content">
+              <div class="price-value">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span class="amount">3000$</span>
+              </div>
+              <ul>
+                <li>3-Location Shoot</li>
+                <li>$40 Print Credit</li>
+                <li>25 Digital Files</li>
+                <li>Print Release</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon-chevron-left"><i class="fa fa-angle-left"></i></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon-chevron-right"><i class="fa fa-angle-right"></i></span></a>
-    </div>
-<!-- #Slider Ends -->
-</div>
-
-
-
-
-
-
-
-
-
-<!-- Cirlce Starts -->
-<div id="about"  class="container spacer about">
-<h2 class="text-center wowload fadeInUp">Creative photographers of London</h2>  
-  <div class="row">
-  <div class="col-sm-6 wowload fadeInLeft">
-    <h4><i class="fa fa-camera-retro"></i> Introduction </h4>
-    <p>Creative digital agency for sleek and sophisticated solutions for mobile, websites and software designs, lead by passionate and uber progressive team that lives and breathes design. Creative digital agency for sleek and sophisticated solutions for mobile, websites and software designs.</p>
-    
-
-  </div>
-  <div class="col-sm-6 wowload fadeInRight">
-  <h4><i class="fa fa-coffee"></i> Passion</h4>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>    
-  </div>
-  </div>
-
-  <div class="services">
-  <h3 class="text-center wowload fadeInUp">Services</h3>
-	<ul class="row text-center list-inline  wowload bounceInUp">
-   		<li>
-            <span><i class="fa fa-camera-retro"></i><b>Photography</b></span>
-        </li>
-        <li>
-            <span><i class="fa fa-cube"></i><b>Studio</b></span>
-        </li>
-        <li>
-            <span><i class="fa fa-graduation-cap"></i><b>Trainings</b></span>
-        </li>
-        <li>
-            <span><i class="fa fa-umbrella"></i><b>Travel</b></span>
-        </li>        
-        <li>
-            <span><i class="fa fa-heart-o"></i><b>Wedding</b></span>
-        </li>
-  	</ul>
-  </div>
-</div>
-<!-- #Cirlce Ends -->
-
-
-<!-- works -->
-<div id="works"  class=" clearfix grid"> 
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/1.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Nature</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/1.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/2.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Events</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/2.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/3.jpg" alt="img01"/>
-        <figcaption>
-            <h2>music</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/3.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/4.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Vintage</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/4.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/5.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Typers</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/5.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-     
-     <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/6.jpg" alt="img01"/>
-        <figcaption>
-            <h2>hotel</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/6.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/7.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Chinese</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/7.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/8.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Dicrap</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/8.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/9.jpg" alt="img01"/>
-        <figcaption>
-            <h2>Coffee</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/9.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/10.jpg" alt="img01"/>
-        <figcaption>
-            <h2>cameras</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/10.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/11.jpg" alt="img01"/>
-        <figcaption>
-            <h2>design</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/11.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-    <figure class="effect-oscar  wowload fadeInUp">
-        <img src="images/portfolio/12.jpg" alt="img01"/>
-        <figcaption>
-            <h2>studio</h2>
-            <p>Lily likes to play with crayons and pencils<br>
-            <a href="images/portfolio/12.jpg" title="1" data-gallery>View more</a></p>            
-        </figcaption>
-    </figure>
-    
-
-     
-</div>
-<!-- works -->
-
-
-<div id="partners" class="container spacer ">
-	<h2 class="text-center  wowload fadeInUp">Some of our happy clients</h2>
-  <div class="clearfix">
-    <div class="col-sm-6 partners  wowload fadeInLeft">
-         <img src="images/partners/1.jpg" alt="partners">
-         <img src="images/partners/2.jpg" alt="partners">
-         <img src="images/partners/3.jpg" alt="partners">
-         <img src="images/partners/4.jpg" alt="partners">
-    </div>
-    <div class="col-sm-6">
-
-
-    <div id="carousel-testimonials" class="carousel slide testimonails  wowload fadeInRight" data-ride="carousel">
-    <div class="carousel-inner">  
-      <div class="item active animated bounceInRight row">
-      <div class="animated slideInLeft col-xs-2"><img alt="portfolio" src="images/team/1.jpg" width="100" class="img-circle img-responsive"></div>
-      <div  class="col-xs-10">
-      <p> I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>      
-      <span>Angel Smith - <b>eshop Canada</b></span>
-      </div>
-      </div>
-      <div class="item  animated bounceInRight row">
-      <div class="animated slideInLeft col-xs-2"><img alt="portfolio" src="images/team/2.jpg" width="100" class="img-circle img-responsive"></div>
-      <div  class="col-xs-10">
-      <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
-      <span>John Partic - <b>Crazy Pixel</b></span>
-      </div>
-      </div>
-      <div class="item  animated bounceInRight row">
-      <div class="animated slideInLeft  col-xs-2"><img alt="portfolio" src="images/team/3.jpg" width="100" class="img-circle img-responsive"></div>
-      <div  class="col-xs-10">
-      <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.</p>
-      <span>Harris David - <b>Jet London</b></span>
-      </div>
-      </div>
-  </div>
-
-   <!-- Indicators -->
-   	<ol class="carousel-indicators">
-    <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-testimonials" data-slide-to="1"></li>
-    <li data-target="#carousel-testimonials" data-slide-to="2"></li>
-  	</ol>
-  	<!-- Indicators -->
-  </div>
-
-
-
     </div>
   </div>
 
+  <!-- Pricing Ends -->
 
-<!-- team -->
-<h3 class="text-center  wowload fadeInUp">Our team</h3>
-<p class="text-center  wowload fadeInLeft">Our creative team that is making everything possible</p>
-<div class="row grid team  wowload fadeInUpBig">	
-	<div class=" col-sm-3 col-xs-6">
-	<figure class="effect-chico">
-        <img src="images/team/8.jpg" alt="img01" class="img-responsive" />
-        <figcaption>
-            <p><b>Barbara Husto</b><br>Senior Designer<br><br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>            
-        </figcaption>
-    </figure>
-    </div>
+  <!-- ContactMe Starts -->
 
-    <div class=" col-sm-3 col-xs-6">
-	<figure class="effect-chico">
-        <img src="images/team/10.jpg" alt="img01"/>
-        <figcaption>            
-            <p><b>Barbara Husto</b><br>Senior Designer<br><br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>            
-        </figcaption>
-    </figure>
-    </div>
+  <div class="contact" id="contact">
+    <h1 class="text-center">Contact Me</h1>
+    <div class="container contact-body">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <h3>Please, contact me in any way convenient for you!</h3>
+          <br />
+          <p style="font-weight: 100 !important;">
+            I’d love to hear from you, so if you like the shots I take,
+            please, share your thoughts with me! I’s striving to know of your
+            impressions and would appreciate a healthy critics! Be sure to
+            contact me if you’re looking for a professional photographer!
+          </p>
+          <br />
 
-    <div class=" col-sm-3 col-xs-6">
-	<figure class="effect-chico">
-        <img src="images/team/12.jpg" alt="img01"/>
-        <figcaption>
-            <p><b>Barbara Husto</b><br>Senior Designer<br><br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>          
-        </figcaption>
-    </figure>
-    </div>
+          <span>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="36" height="36"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+              </svg>
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
+              <b> Call Us</b><br>
+              1 (317)-000-888
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-5 col-xs-5"></div>
+          </span>
 
-    <div class=" col-sm-3 col-xs-6">
-	<figure class="effect-chico">
-        <img src="images/team/17.jpg" alt="img01"/>
-        <figcaption>
-            <p><b>Barbara Husto</b><br>Senior Designer<br><br><a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a></p>
-        </figcaption>
-    </figure>
-    </div>
-
- 
-</div>
-<!-- team -->
-
-</div>
-
-
-
-
-
-
-
-
-
-<!-- About Starts -->
-<div class="highlight-info">
-<div class="overlay spacer">
-<div class="container">
-<div class="row text-center  wowload fadeInDownBig">
-	<div class="col-sm-3 col-xs-6">
-	<i class="fa fa-smile-o  fa-5x"></i><h4>24 Clients</h4>
-	</div>
-	<div class="col-sm-3 col-xs-6">
-	<i class="fa fa-rocket  fa-5x"></i><h4>75 Projects</h4>
-	</div>
-	<div class="col-sm-3 col-xs-6">
-	<i class="fa fa-cloud-download  fa-5x"></i><h4>454 Downloads</h4>
-	</div>
-	<div class="col-sm-3 col-xs-6">
-	<i class="fa fa-map-marker fa-5x"></i><h4>2 Offices</h4>
-	</div>
-</div>
-</div>
-</div>
-</div>
-<!-- About Ends -->
-
-
-
-
-
-
-
-
-<div id="contact" class="spacer">
-<!--Contact Starts-->
-<div class="container contactform center">
-<h2 class="text-center  wowload fadeInUp">Get in touch to start your project</h2>
-  <div class="row wowload fadeInLeftBig">      
-      <div class="col-sm-6 col-sm-offset-3 col-xs-12">      
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Company">
-        <textarea rows="5" placeholder="Message"></textarea>
-        <button class="btn btn-primary"><i class="fa fa-paper-plane"></i> Send</button>
+          <p style="padding-top: 40px;">
+          <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="36" height="36"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <polyline points="3 7 12 13 21 7" />
+            </svg>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
+            <b>Send me a email</b><br>
+            email@email.com
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-5 col-xs-5"></div>
+          </p>
+          <br />
+          <br />
+          <br>
+          <p style="padding-left: 15px;">
+          <p><b>Social media</b></p>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="35"
+            height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="60"
+            height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="4" />
+            <circle cx="12" cy="12" r="3" />
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="36"
+            height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
+          </svg>
+          </p>
+          <br />
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div style="padding-bottom: 5px !important;">
+            <label for="firstname" class="form-label">First Name</label>
+            <input type="firstname" class="form-control" placeholder="" />
+          </div>
+          <br />
+          <div class="mb-3">
+            <label for="lastname" class="form-label">Last Name</label>
+            <input type="lastname" class="form-control" placeholder="" />
+          </div>
+          <br />
+          <div class="mb-3">
+            <label for="emailaddress" class="form-label">Email address</label>
+            <input type="email" class="form-control" placeholder="" />
+          </div>
+          <br />
+          <div class="mb-3 pb-5">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="Phone" class="form-control" placeholder="" />
+          </div>
+          <br />
+          <div class="mb-3 pb-5">
+            <label for="phone" class="form-label">What type of photos are you interested in?</label>
+            <br />
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select one</option>
+              <option value="Wedding">Wedding</option>
+              <option value="Quincieañera">Quincieañera</option>
+              <option value="Birthdays">Birthdays</option>
+              <option value="Fashion">Fashion</option>
+              <option value="Food">Food</option>
+              <option value="Other">other</option>
+            </select>
+          </div>
+          <br />
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
 
+  <!-- ContactMe Ends -->
 
+  <!-- Footer Starts -->
 
-</div>
-</div>
-<!--Contact Ends-->
+  <div class="footer" id="contact">
+    <!-- <h1 class="text-center">Contact Me</h1> -->
+    <div class="container contact-body">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <br>
+          <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="350px"
+            data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+            data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a
+                href="https://www.facebook.com/facebook">Meta</a></blockquote>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <img src="./images/Main_Logo-removebg-preview.png" alt="Salem Photo Studio"
+            style="width: 350px; padding-top: 80px;" />
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- footer Ends -->
 
+  <div class="footer text-center spacer">
+    <p>Copyright &copy; <span id="year"></span>- All Rights Reserved. Developed By <a style="padding-left: 6px;" class="shake"
+        href="https://marco-lopez.netlify.app/"> Marco Lopez</a></p>
+  </div>
 
-<!-- Footer Starts -->
-<div class="footer text-center spacer">
-<p class="wowload flipInX"><a href="#"><i class="fa fa-facebook fa-2x"></i></a> <a href="#"><i class="fa fa-instagram fa-2x"></i></a> <a href="#"><i class="fa fa-twitter fa-2x"></i></a> <a href="#"><i class="fa fa-flickr fa-2x"></i></a> </p>
-Copyright 2014 Cyrus Creative Studio. All rights reserved.
-</div>
-<!-- # Footer Ends -->
-<a href="#home" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>
-
-
-
-
-
-<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <!-- The container for the modal slides -->
-    <div class="slides"></div>
-    <!-- Controls for the borderless lightbox -->
-    <h3 class="title">Title</h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <!-- The modal dialog, which will be used to wrap the lightbox content -->    
-</div>
-
-
-
-<!-- jquery -->
-<script src="assets/jquery.js"></script>
-
-<!-- wow script -->
-<script src="assets/wow/wow.min.js"></script>
-
-
-<!-- boostrap -->
-<script src="assets/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
-
-<!-- jquery mobile -->
-<script src="assets/mobile/touchSwipe.min.js"></script>
-<script src="assets/respond/respond.js"></script>
-
-<!-- gallery -->
-<script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
-
-<!-- custom script -->
-<script src="assets/script.js"></script>
-
+  <!-- jquery -->
+  <script src="assets/jquery.js"></script>
+  <!-- boostrap -->
+  <script src="assets/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+  <!-- jquery mobile -->
+  <script src="assets/mobile/touchSwipe.min.js"></script>
+  <script src="assets/respond/respond.js"></script>
+  <!-- gallery -->
+  <script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
+  <script src="./js/all.js"></script>
+  <!-- All JS  -->
+  <script src="./js/parallaxie.js"></script>
+  <script src="./js/custom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
 </body>
+
 </html>

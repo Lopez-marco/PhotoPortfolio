@@ -133,7 +133,6 @@
 		interval: 100,
 	}); 
 	
-	
     // CONTACT
     jQuery(document).ready(function() {
         $('#contactform').submit(function() {
