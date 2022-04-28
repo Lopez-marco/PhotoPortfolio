@@ -91,6 +91,9 @@ body {
 }
 
 /* My work start */
+#gallery {
+  margin-bottom: 35px;
+}
 .gallery-single {
   margin: 30px 15px;
 }
@@ -470,7 +473,38 @@ body {
   border-radius: 0px;
 }
 
+.about {
+  background-color: #1b1b1b;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  color: white;
+}
 .filter-button-group button:hover {
   background: #fff;
   color: black;
+}
+
+.image {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: 238px;
+  height: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.image:hover {
+  margin-top: -10px;
+  transition: margin-left .5s;
+  -moz-transition: margin-left .5s;
+  /* Firefox 4 */
+  -webkit-transition: margin-left .5s;
+  /* Safari and Chrome */
+  -o-transition: margin-left .5s;
+  /* Opera */
 }
