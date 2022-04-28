@@ -848,3 +848,16 @@ body {
 .shake {
   display: inline-block
 }
+.quickmenu {
+  text-decoration: none;
+  color: white;
+  outline: none;
+  word-wrap: break-word;
+  line-height: 2em;
+  padding-left: 20px;
+  font-weight: 400;
+}
+
+li {
+  text-decoration: none;
+}
