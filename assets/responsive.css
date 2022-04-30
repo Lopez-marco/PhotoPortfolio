@@ -128,6 +128,9 @@
 		.menu-active {
 		  left: 30% !important;
 		}
+		.form-button {
+			background-color: white;
+		}
     }
 
     /* Custom, iPhone Retina */ 
