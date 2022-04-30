@@ -344,6 +344,13 @@ body {
   .partners img {
     margin: 0 25px 25px 0;
   }
+  .logo {
+    width: 100px !important;
+  }
+  
+  .header-logo {
+    width: 300px !important;
+  }
 }
 
 @media (max-width: 900px) {
@@ -379,6 +386,13 @@ body {
   .grid figure.effect-chico p {
     font-size: 0.6em;
     line-height: 1.5em;
+  }
+  .logo {
+    width: 150px !important;
+  }
+  
+  .header-logo {
+    width: 300px !important;
   }
 }
 
@@ -458,6 +472,13 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+  }
+  .logo {
+    width: 150px !important;
+  }
+  
+  .header-logo {
+    width: 300px !important;
   }
 }
 
