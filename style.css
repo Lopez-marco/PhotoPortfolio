@@ -630,12 +630,12 @@ body {
   right: -50px;
 }
 
-.pricingTable .title {
+.pricingTable .title-pricing {
   display: inline-block;
   width: 90%;
   padding: 3px 0;
   margin: 0;
-  font-size: 33px;
+  font-size: 25px;
   color: #fff;
   text-transform: capitalize;
   border: 2px solid #fff;
@@ -702,6 +702,11 @@ body {
   list-style: none;
   text-align: left;
   border: 1px solid #1B1B1B;
+  height: 250px;
+  }
+  
+  .pricing-content {
+    margin-bottom: 35px;
 }
 
 .pricingTable .pricing-content ul li {
@@ -826,7 +831,6 @@ body {
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -859,6 +863,7 @@ body {
   background-color: #2C2C2C;
   color: #fff;
   padding-top: 25px;
+  padding-bottom: 15px;
 
 }
 
