@@ -3,19 +3,21 @@ body {
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-.navbar-nav > li > a {
+.navbar-nav>li>a {
   font-size: 1em;
   line-height: 3.6em;
 }
+
 .navbar-fixed-top {
   top: 0px;
 }
+
 .navbar-inverse {
   background: #1b1b1b;
 }
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
   background: none;
   color: #fff;
 }
@@ -34,10 +36,12 @@ body {
   overflow: hidden;
   position: relative;
 }
+
 #home-slider .item {
   -webkit-background-size: cover;
   background-size: cover;
 }
+
 #home-slider .caption {
   top: 100%;
   margin-top: -100px;
@@ -52,18 +56,22 @@ body {
   font-weight: 300;
   color: #fff;
 }
+
 #home-slider .caption-wide {
   margin-top: -204px;
 }
+
 #home-slider .caption .main-title {
   color: #fff;
   margin-bottom: 0px;
 }
+
 #home-slider .caption .sub-title {
   font-size: 40px;
   color: #fff;
   text-transform: uppercase;
 }
+
 .caption .btn-start {
   color: #fff;
   font-weight: 400;
@@ -76,6 +84,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 .caption .btn-start:hover {
   color: black;
   background: #fff;
@@ -84,6 +93,7 @@ body {
 #home-slider .carousel-indicators .active {
   height: 10px;
 }
+
 #home-slider .carousel-indicators li {
   width: 45px;
   height: 8px;
@@ -94,6 +104,7 @@ body {
 #gallery {
   margin-bottom: 35px;
 }
+
 .gallery-single {
   margin: 30px 15px;
 }
@@ -112,76 +123,64 @@ body {
   -webkit-box-shadow: 0 0 10px #ccc;
   box-shadow: 0 0 10px #ccc;
 }
+
 .gallery-single:before {
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-        36deg,
-        rgba(0, 0, 0, 0.5) 42.34%,
-        transparent 42.34%
-      )
-      0 0,
+  background: linear-gradient(36deg,
+    rgba(0, 0, 0, 0.5) 42.34%,
+      transparent 42.34%) 0 0,
     linear-gradient(72deg, rgba(0, 0, 0, 0.5) 75.48%, transparent 75.48%) 0 0,
-    linear-gradient(-36deg, rgba(0, 0, 0, 0.5) 42.34%, transparent 42.34%) 100%
-      0,
-    linear-gradient(-72deg, rgba(0, 0, 0, 0.5) 75.48%, transparent 75.48%) 100%
-      0,
-    linear-gradient(36deg, transparent 57.66%, rgba(0, 0, 0, 0.5) 57.66%) 100%
-      100%,
-    linear-gradient(72deg, transparent 24.52%, rgba(0, 0, 0, 0.5) 24.52%) 100%
-      100%,
-    linear-gradient(-36deg, transparent 57.66%, rgba(0, 0, 0, 0.5) 57.66%) 0
-      100%,
-    linear-gradient(-72deg, transparent 24.52%, rgba(0, 0, 0, 0.5) 24.52%) 0
-      100%,
-    rgba(0, 0, 0, 0.5) linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
-      50% 100%;
+    linear-gradient(-36deg, rgba(0, 0, 0, 0.5) 42.34%, transparent 42.34%) 100% 0,
+    linear-gradient(-72deg, rgba(0, 0, 0, 0.5) 75.48%, transparent 75.48%) 100% 0,
+    linear-gradient(36deg, transparent 57.66%, rgba(0, 0, 0, 0.5) 57.66%) 100% 100%,
+    linear-gradient(72deg, transparent 24.52%, rgba(0, 0, 0, 0.5) 24.52%) 100% 100%,
+    linear-gradient(-36deg, transparent 57.66%, rgba(0, 0, 0, 0.5) 57.66%) 0 100%,
+    linear-gradient(-72deg, transparent 24.52%, rgba(0, 0, 0, 0.5) 24.52%) 0 100%,
+    rgba(0, 0, 0, 0.5) linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) 50% 100%;
   background-repeat: no-repeat;
   background-size: 50% 50%;
   opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-clip-path: polygon(
-    50% 0%,
+  -webkit-clip-path: polygon(50% 0%,
     90% 20%,
     100% 60%,
     75% 100%,
     25% 100%,
     0% 60%,
-    10% 20%
-  );
-  clip-path: polygon(
-    50% 0%,
-    90% 20%,
-    100% 60%,
-    75% 100%,
-    25% 100%,
-    0% 60%,
-    10% 20%
-  );
+      10% 20%);
+      clip-path: polygon(50% 0%,
+        90% 20%,
+        100% 60%,
+        75% 100%,
+        25% 100%,
+        0% 60%,
+      10% 20%);
   transform: translateX(-50%) translateY(-50%) scale(0) rotate(360deg);
   transition: all 0.3s ease 0s;
 }
+
 .gallery-single:hover:before {
   opacity: 0.5;
   transform: translateX(-50%) translateY(-50%) scale(1.5) rotate(0);
 }
+
 .gallery-single:after {
   content: "";
   width: 100%;
   height: 100%;
-  background: radial-gradient(
-    rgba(255, 255, 255, 0.9),
+  background: radial-gradient(rgba(255, 255, 255, 0.9),
     transparent,
-    transparent
-  );
+      transparent);
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
+
 .gallery-single:hover:after {
   opacity: 1;
 }
@@ -243,6 +242,7 @@ body {
   transform: translateX(-50%);
   transition: all 0.3s ease 0.2s;
 }
+
 .gallery-single:hover .icon {
   bottom: 15px;
 }
@@ -303,6 +303,7 @@ body {
 #works {
   padding-top: 6em;
 }
+
 #works figcaption a {
   border: 1px solid #fff;
   margin-top: 1em;
@@ -310,19 +311,23 @@ body {
   color: #fff;
   padding: 0 2em;
 }
+
 #works figcaption a:hover {
   text-decoration: none;
   padding: 0 3em;
 }
+
 /*works*/
 
 @media (max-width: 1200px) {
   body {
     font: 300 13px/13px Roboto, Arial, Helvetica;
   }
+
   .navbar-brand {
     padding-top: 11px;
   }
+
   .services ul li {
     margin: 0 0.5em;
   }
@@ -330,9 +335,11 @@ body {
   .grid figure h2 {
     font: 700 1.5em Roboto, Arial, Helvetica;
   }
+
   figure.effect-oscar figcaption {
     padding: 12%;
   }
+
   figure.effect-oscar figcaption::before,
   figure.effect-chico figcaption::before {
     top: 20px;
@@ -344,12 +351,17 @@ body {
   .partners img {
     margin: 0 25px 25px 0;
   }
+
   .logo {
-    width: 100px !important;
+    width: 120px !important;
   }
-  
+
   .header-logo {
-    width: 300px !important;
+    width: 350px !important;
+    }
+    
+    .test {
+      background-attachment: scroll !important;
   }
 }
 
@@ -357,58 +369,74 @@ body {
   h1 {
     font: 700 3.5em Roboto, Arial, Helvetica;
   }
+
   h4 {
     font: 300 1.3em Roboto, Arial, Helvetica;
   }
+
   .btn {
     padding: 1em 2em;
   }
+
   .partners img {
     margin: 0 15px 25px 0;
     width: 157px;
   }
+
   .services ul li {
     width: 9em;
     height: 9em;
   }
+
   figure.effect-chico figcaption {
     padding: 2em;
   }
+
   figure.effect-oscar figcaption {
     padding: 20%;
   }
+
   figure.effect-chico figcaption::before {
     top: 10px;
     right: 10px;
     bottom: 10px;
     left: 10px;
   }
+
   .grid figure.effect-chico p {
     font-size: 0.6em;
     line-height: 1.5em;
   }
+
   .logo {
-    width: 150px !important;
+    width: 120px !important;
   }
-  
+
   .header-logo {
-    width: 300px !important;
-  }
+    width: 350px !important;
+    }
+    
+    .test {
+      background-attachment: scroll !important;
+    }
 }
 
 @media (max-width: 767px) {
   body {
     font: 300 12px/12px Roboto, Arial, Helvetica;
   }
-  .navbar-nav > li > a {
+.navbar-nav>li>a {
     line-height: 1em;
   }
+
   .navbar-brand {
     padding: 7px;
   }
+
   .navbar-brand img {
     height: 37px;
   }
+
   .navbar-toggle {
     margin-top: 17px;
   }
@@ -423,12 +451,15 @@ body {
     text-align: left;
     font-size: 1.7em;
   }
+
   h4 {
     font: 300 1.2em Roboto, Arial, Helvetica;
   }
+
   #partners h2 {
     padding: 0 1em;
   }
+
   #home {
     padding-top: 5em;
   }
@@ -437,6 +468,7 @@ body {
     display: block;
     float: left;
   }
+
   .partners img {
     width: 120px;
   }
@@ -445,9 +477,11 @@ body {
     padding-left: 2em;
     padding-right: 2em;
   }
+
   .spacer {
     padding: 2em 0 0 0;
   }
+
   .services ul li {
     margin-bottom: 1em;
   }
@@ -460,26 +494,34 @@ body {
     margin: 0;
     padding: 0;
   }
+
   figure.effect-chico figcaption {
     padding: 1.5em;
   }
+
   .footer {
     margin-top: 2em;
     padding-bottom: 2em;
   }
+
   .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
   }
+
   .logo {
-    width: 150px !important;
+    width: 120px !important;
   }
-  
+
   .header-logo {
-    width: 300px !important;
-  }
+    width: 350px !important;
+    }
+    
+    .test {
+      background-attachment: scroll !important;
+    }
 }
 
 .filter-button-group {
@@ -513,6 +555,7 @@ body {
   padding-bottom: 55px;
   color: white;
 }
+
 .filter-button-group button:hover {
   background: #fff;
   color: black;
@@ -542,6 +585,7 @@ body {
   -o-transition: margin-left .5s;
   /* Opera */
 }
+
 /* Pricing */
 #pricing {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),
@@ -786,6 +830,7 @@ body {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
 /* Contact */
 
 .contact {
@@ -808,12 +853,13 @@ body {
 .form-button {
   color: black;
 }
+
 /* footer */
 .footer {
   background-color: #2C2C2C;
   color: #fff;
   padding-top: 25px;
-  padding-bottom: 25px;
+
 }
 
 .center {
@@ -879,6 +925,7 @@ body {
 .shake {
   display: inline-block
 }
+
 .quickmenu {
   text-decoration: none;
   color: white;
@@ -892,6 +939,7 @@ body {
 li {
   text-decoration: none;
 }
+
 /*===================================
 =            portfolio            =
 ===================================*/

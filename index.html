@@ -30,7 +30,8 @@
           <div class="navbar-header">
             <!-- Logo Starts -->
             <a class="navbar-brand" href="#home">
-              <img src="./img/Main_Logo-removebg-preview.png" alt="Salem Photo Studio" class="logo" style="width: 210px;" />
+              <img src="./img/Main_Logo-removebg-preview.png" alt="Salem Photo Studio" class="logo"
+                style="width: 210px;" />
             </a>
             <!-- #Logo Ends -->
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -67,15 +68,20 @@
         <li data-slide-to="2" data-target="#home-slider" class=""></li>
       </ol>
       <div class="carousel-inner">
-        <div class="item active" style="
+        <div class="test item active" style="
               background-image: linear-gradient(
                   rgba(0, 0, 0, 0.5),
                   rgba(0, 0, 0, 0.5)
                 ),
                 url(https://images.pexels.com/photos/2229671/pexels-photo-2229671.jpeg);
-              background-size: cover;
-              background-position: center;
-              background-attachment: fixed;
+                background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+              width: 100%;
+              height: auto;
+              @media (max-width: 900px) {background-attachment: scroll;}
+              @media (max-width: 767px) {background-attachment: scroll;}
             ">
           <div class="col-sm-offset-1 caption">
             <h4 class="main-title wow fadeInUp">Welcome to</h4>
@@ -84,8 +90,8 @@
                 class="main-title wow fadeInUp"
                 data-wow-delay=".25s"
               > -->
-            <img class="wow fadeInUp" src="./img/Main_Logo-removebg-preview.png" alt="Salem Photo Studio"
-              style="width: 450px;" class="header-logo"/>
+            <img class="header-logo wow fadeInUp" src="./img/Main_Logo-removebg-preview.png" alt="Salem Photo Studio"
+              style="width: 450px;" />
             <!-- </h1> -->
             <!-- <h2 class="main-title wow fadeInUp" data-wow-delay=".35s">
                 Phrase
@@ -94,7 +100,7 @@
             <a class="btn btn-start wow fadeInUp" href="#gallery" data-scroll data-wow-delay=".85s">My Work</a>
           </div>
         </div>
-        <div class="item" style="
+        <div class="test item" style="
               background-image: linear-gradient(
                   rgba(0, 0, 0, 0.5),
                   rgba(0, 0, 0, 0.5)
@@ -117,7 +123,7 @@
             <a class="btn btn-start wow fadeInUp" href="#gallery" data-scroll data-wow-delay=".85s">My Work</a>
           </div>
         </div>
-        <div class="item" style="
+        <div class="test item" style="
               background-image: linear-gradient(
                   rgba(0, 0, 0, 0.5),
                   rgba(0, 0, 0, 0.5)
@@ -339,7 +345,7 @@
               that keeps me motivated to strive to become a better photographer.
             </p>
             <p>
-              Thank you for your time. I will be happy to assist you and make business with you. 
+              Thank you for your time. I will be happy to assist you and make business with you.
             </p>
           </div>
         </div>
@@ -370,8 +376,8 @@
       <!-- end title -->
 
       <div class="row">
-        <div class="col-md-2 col-sm-12"></div>
-        <div class="col-md-4 col-sm-6">
+        <!-- <div class="col-md-2 col-sm-12"></div> -->
+        <div class="col-md-3 col-sm-6">
           <div class="pricingTable hvr-grow wow fadeInUp" data-wow-delay=".25s">
             <div class="pricingTable-header">
               <h3 class="title">Wedding<br> Package 1</h3>
@@ -392,7 +398,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-3 col-sm-6">
           <div class="pricingTable yellow hvr-grow wow fadeInUp" data-wow-delay=".35s">
             <div class="pricingTable-header">
               <h3 class="title">Wedding <br> Package 2</h3>
@@ -414,11 +420,34 @@
             </div>
           </div>
         </div>
-        <div class="col-md-2 col-sm-12"></div>
-        <!-- <div class="col-md-4 col-sm-6">
+
+        <div class="col-md-3 col-sm-6">
+          <div class="pricingTable yellow hvr-grow wow fadeInUp" data-wow-delay=".35s">
+            <div class="pricingTable-header">
+              <h3 class="title">Wedding <br> Package 2</h3>
+            </div>
+            <div class="pricing-content">
+              <div class="price-value">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span class="amount">1100$</span>
+              </div>
+              <ul>
+                <li>8 Hour Coverage</li>
+                <li>120 - 145 Photos</li>
+                <li>2-Location Shoot</li>
+                <li>USB With Photos</li>
+                <br>
+                <br>
+                <!-- <li>Print Release</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-2 col-sm-12"></div> -->
+        <div class="col-md-3 col-sm-6">
           <div class="pricingTable purple hvr-grow wow fadeInUp" data-wow-delay=".45s">
             <div class="pricingTable-header">
-              <h3 class="title">Wedding</h3>
+              <h3 class="title">Wedding <br> Package 2</h3>
             </div>
             <div class="pricing-content">
               <div class="price-value">
@@ -430,10 +459,104 @@
                 <li>$40 Print Credit</li>
                 <li>25 Digital Files</li>
                 <li>Print Release</li>
+                <br>
+                <br>
               </ul>
             </div>
           </div>
-        </div> -->
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <!-- <div class="col-md-2 col-sm-12"></div> -->
+        <div class="col-md-3 col-sm-6">
+          <div class="pricingTable hvr-grow wow fadeInUp" data-wow-delay=".25s">
+            <div class="pricingTable-header">
+              <h3 class="title">Wedding<br> Package 1</h3>
+            </div>
+            <div class="pricing-content">
+              <div class="price-value">
+                <i class="fa fa-star"></i>
+                <span class="amount">1600$</span>
+              </div>
+              <ul>
+                <li>8 Hour Coverage</li>
+                <li>175 - 200 Photos</li>
+                <li>3 Location Shoot</li>
+                <li>Background Set</li>
+                <li>USB With Photos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="pricingTable yellow hvr-grow wow fadeInUp" data-wow-delay=".35s">
+            <div class="pricingTable-header">
+              <h3 class="title">Wedding <br> Package 2</h3>
+            </div>
+            <div class="pricing-content">
+              <div class="price-value">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span class="amount">1100$</span>
+              </div>
+              <ul>
+                <li>8 Hour Coverage</li>
+                <li>120 - 145 Photos</li>
+                <li>2-Location Shoot</li>
+                <li>USB With Photos</li>
+                <br>
+                <br>
+                <!-- <li>Print Release</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="pricingTable yellow hvr-grow wow fadeInUp" data-wow-delay=".35s">
+            <div class="pricingTable-header">
+              <h3 class="title">Wedding <br> Package 2</h3>
+            </div>
+            <div class="pricing-content">
+              <div class="price-value">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span class="amount">1100$</span>
+              </div>
+              <ul>
+                <li>8 Hour Coverage</li>
+                <li>120 - 145 Photos</li>
+                <li>2-Location Shoot</li>
+                <li>USB With Photos</li>
+                <br>
+                <br>
+                <!-- <li>Print Release</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-2 col-sm-12"></div> -->
+        <div class="col-md-3 col-sm-6">
+          <div class="pricingTable purple hvr-grow wow fadeInUp" data-wow-delay=".45s">
+            <div class="pricingTable-header">
+              <h3 class="title">Wedding <br> Package 2</h3>
+            </div>
+            <div class="pricing-content">
+              <div class="price-value">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span class="amount">3000$</span>
+              </div>
+              <ul>
+                <li>3-Location Shoot</li>
+                <li>$40 Print Credit</li>
+                <li>25 Digital Files</li>
+                <li>Print Release</li>
+                <br>
+                <br>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -614,7 +737,6 @@
       Developed By <a style="padding-left: 6px;" class="shake" href="https://marco-lopez.netlify.app/"> Marco Lopez</a>
     </p>
   </div>
-  test
 
   <!-- jquery -->
   <script src="assets/jquery.js"></script>
