@@ -363,6 +363,9 @@ body {
     .test {
       background-attachment: scroll !important;
   }
+  #pricing {
+    background-attachment: scroll !important;
+  }
 }
 
 @media (max-width: 900px) {
@@ -417,6 +420,9 @@ body {
     }
     
     .test {
+      background-attachment: scroll !important;
+    }
+    #pricing {
       background-attachment: scroll !important;
     }
 }
@@ -522,6 +528,9 @@ body {
     .test {
       background-attachment: scroll !important;
     }
+#pricing {
+  background-attachment: scroll !important;
+}
 }
 
 .filter-button-group {
