@@ -32,6 +32,15 @@
 </head>
 
 <body>
+  <script>
+    // Only show loader if JS is available
+    document.body.className += ' has-js';
+    // Option 1: Hide loader when 'load' event fires
+    window.onload = function() { document.body.className += ' loaded'; }
+    // Option 2: Hide loader after 2 seconds, in case the 'load' event never fires
+    setTimeout(function(){ document.body.className += ' loaded'; }, 1000 * 5);
+  </script>
+
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0"
     nonce="jDBQnxyV"></script>
@@ -683,7 +692,6 @@
       Developed By <a href="https://marco-lopez.netlify.app/" target="_blank"> Marco Lopez</a>
     </p>
   </div>
-
   <!-- jquery -->
   <script src="assets/jquery.js"></script>
   <script src="./js/smoothscroll.js"></script>
@@ -701,6 +709,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
+
   </script>
 </body>
 
